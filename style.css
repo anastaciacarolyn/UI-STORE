@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:#fff;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: #ffe761;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container::before{
+    content: '';
+    position: absolute;
+    height: 330px;
+    width: 330px;
+    border-radius: 50%;
+    background: linear-gradient(#fcce04, #fff0a6);
+    transform:translate(-490px,-150px);
+
+}
+.container::after{
+    content: '';
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: linear-gradient(#fdf2bd,#ffdc2e);
+    transform: translate(490px,170px);
+
+}
+.container .ball-1{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #f5b904;
+    transform: translate(-250px,200px);
+    position: absolute;
+}
+.container .ball-2{
+    height: 70px;
+    width: 70px;
+    border-radius: 70%;
+    background: #ffc32b;
+    transform: translate(-20px,-235px);
+    position: absolute;
+}
+.container .ball-3{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #ffc404;
+    transform: translate(150px,250px);
+    position: absolute;
+}
+.container .box{
+    height: 86vh;
+    width: 75%;
+    padding: 0,20px;
+    background: cgba(255,255,255,0.1);
+    z-index: 20;
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    border: 3px solid rgba(255,255,255,0.7);
+    backdrop-filter: blur(25px); /*important!!*/
+    box-shadow: -15px 17px 17px rgba(10,10,10,0.25);
+
+}
+.container .box nav{
+    height: 7%;
+    width: 95%;
+    position: absolute;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin: 10px auto;
+    padding: 20px;
+
+}
+.container .box nav ul li{
+    display: inline-block;
+    padding: 0 22px;
+}
+.container .box nav ul li a{
+    font-size: 15px;
+    cursor: pointer;
+}
+.container .box nav ul li a:hover{
+    color:rgb(0, 0, 0);    
+}
+.container .box nav .logo{
+    font-size: 35px;
+    color: #000;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+.container .box .contains{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80%;
+    position: relative;
+    margin-top: 15%;
+    padding-left: 53px;
+}
+.container .box .contains .section-1{
+    position: absolute;
+    margin-top: 70px;
+}
+.container .box .contains .section-1 h1{
+    font-size: 100px;
+}
+.container .box .contains .section-1 h3{
+    font-size: 300px;
+}
+.container .box .contains .section-1 p{
+    margin-top: 15px;
+}
+.container .box .contains .section-1 .button{
+    margin-top: 60px;
+}
+.container .box .contains .section-1 .button a{
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.container .box .contains .section-1 .button a:hover{
+    background: #fff;
+    color: #000;
+}
+.container .box .contains .section-1 .button img{
+    width: 100px;
+    height: 200px;
+}
